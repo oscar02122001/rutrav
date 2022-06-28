@@ -105,6 +105,7 @@ a {
     max-width: 768px;
     margin: 0 auto;
     padding: 0 15px;
+    overflow: hidden;
   }
 }
 
@@ -876,6 +877,8 @@ a {
   .header__end-ctbtn {
     border: none;
     background-color: transparent;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   .header__ctitom-wrap.active {
     display: block;
@@ -1217,6 +1220,8 @@ a {
   .intro__img {
     width: 620px;
     height: 321px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 

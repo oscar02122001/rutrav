@@ -77,9 +77,11 @@
     }
 
 }
-.header{
+
+.header {
     background-color: #FAFAEB;
 }
+
 .header__top {
     padding-top: 15px;
     padding-bottom: 16px;
@@ -93,7 +95,7 @@
 .header__top-manu {
     display: flex;
     flex-grow: 1;
- 
+
 
 }
 
@@ -586,13 +588,15 @@
         position: relative;
 
     }
-    .header__catalog--end{
+
+    .header__catalog--end {
         position: absolute;
         top: -50%;
         width: 100%;
         z-index: 2;
         background-color: #2D3A3A;
-     }
+    }
+
     .header__end {
         padding: 8px 0;
         // overflow: hidden;
@@ -673,6 +677,7 @@
     .header__end-ctbtn {
         border: none;
         background-color: transparent;
+        transform: rotate(180deg);
     }
 
 
