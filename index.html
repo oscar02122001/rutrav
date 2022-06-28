@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutrav</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <h1 class="visually-hidden">Rusrav</h1>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <button class="burger header__top-burger">
+                    <span class="burger__inner header__burger-inner"></span>
+                </button>
+
+                <nav class="header__top-manu">
+                    <ul class="header__top-list">
+                        <li class="header__top-itom">
+                            <a class="header__top-link" href="#">О компании</a>
+                        </li>
+                        <li class="header__top-itom">
+                            <a class="header__top-link" href="#"> Оплата</a>
+                        </li>
+                        <li class="header__top-itom">
+                            <a class="header__top-link" href="#"> Доставка</a>
+
+                        </li>
+                        <li class="header__top-itom">
+                            <a class="header__top-link" href="#">Полезные статьи</a>
+                        </li>
+                        <li class="header__top-itom">
+                            <a class="header__top-link" href="#"> Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+
+                <form class="header__top-form" method="get" action="#">
+                    <input class="header__top-search " type="search" name="search" aria-label="site search helper"
+                        required placeholder="Поиск">
+
+                    <div class="header__form-wrap">
+                        <input class="header__top-leave" type="button" name="leave" aria-label="buttton to leave site"
+                            value="Вход">
+                        <input class="header__top-sign" type="button" name="sign" aria-label="site sign in"
+                            value="Регистрация">
+
+                        <input class="header___top-city" type="button" name="city" value="Москва">
+                    </div>
+
+                    <!-- <ul class="header__selected-list">
+                        <li class="header__selected-itom">
+                            <a class="header__selected-link" href="#"></a>
+                        </li>
+                        <li class="header__selected-itom">
+                            <a class="header__selected-link" href="#"></a>
+                        </li>
+                    </ul> -->
+                    <!-- <select class="header__top-select" name="city" id="city">
+                       
+                        <option class="header__top-option" value="Москва">Москва</option>
+                        <option class="header__top-option" value="Ростов-на-Дону">Ростов-на-Дону</option>
+                
+                    </select> -->
+                </form>
+
+                <!-- <div class="header__top-link">
+                    <button class="header__top-sign">Регистрация</button>
+                </div> -->
+
+            </div>
+        </div>
+        <span class="header__liner"></span>
+
+        <div class="header__contact container">
+            <!-- <div class="header__contact-left"> -->
+            <a class="header__logo-link" href="">
+                <img class="header__logo" src="img/logo.svg" alt="sote logo" width="150" height="102">
+            </a>
+            <div class="header__location">
+                <p class="header__loc">
+                    <a class="header__map" href="https://goo.gl/maps/QwSxw8eAK4xwB3Lx8">г.Москва, ул. Прянишникова,
+                        19А стр.4</a>
+                </p>
+                <p class="header__work-time">Пн-Пт 9:00-18:00</p>
+            </div>
+            <div class="header__online">
+                <a class="header__massage-link" href="#">
+                    <svg class="header__send" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m15 1 .4596.197a.5002.5002 0 0 0-.6566-.6566L15 1ZM1 7l-.197-.4596a.5.5 0 0 0-.0602.8883L1 7Zm8 8-.4288.2572a.5.5 0 0 0 .8884-.0602L9 15ZM14.803.5404l-14 6 .394.9192 14-6-.394-.9192ZM.7428 7.4287l5 3 .5145-.8575-5-3-.5145.8575Zm4.8285 2.8285 3 5 .8575-.5144-3-5-.8575.5144Zm3.8883 4.9398 6-14-.9192-.394-6 14 .9192.394ZM14.6464.6464l-9 9 .7072.7072 9-9-.7072-.7072Z"
+                            fill="#2D3A3A" /></svg>
+                    Gazon77Bot
+                </a>
+                <a class="header__site-link" href="#">
+                    <svg class="header__site" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m1 4 7 4 7-4M2 1h12c.5523 0 1 .4477 1 1v10c0 .5523-.4477 1-1 1H2c-.5523 0-1-.4477-1-1V2c0-.5523.4477-1 1-1Z"
+                            stroke="#2D3A3A" /></svg>
+                    info@rutrav.ru
+                </a>
+            </div>
+            <!-- </div> -->
+
+            <!-- <div class="header__contact-right"> -->
+            <div class="header__tel">
+                <a class="header__tel-num" href="tel: +7 (495) 777-90-87">
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.2192 1H3c-1.1046 0-2 .8954-2 2v2c0 5.5228 4.4771 10 10 10h2c1.1046 0 2-.8954 2-2v-1.382a1 1 0 0 0-.5528-.8944l-2.4159-1.208c-.5443-.2721-1.2035.001-1.3959.5782l-.2978.8933a1.2094 1.2094 0 0 1-1.3845.8035c-2.3938-.4787-4.265-2.3499-4.7437-4.7437a1.2094 1.2094 0 0 1 .8035-1.3845l1.1086-.3696a1 1 0 0 0 .6539-1.1912l-.586-2.3441A1 1 0 0 0 5.2192 1Z"
+                            stroke="#2D3A3A" /></svg>
+                    +7 (495) 777-90-87
+                </a>
+                <a class="header__tel-num" href="tel:8(800)775-27-56">
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.2192 1H3c-1.1046 0-2 .8954-2 2v2c0 5.5228 4.4771 10 10 10h2c1.1046 0 2-.8954 2-2v-1.382a1 1 0 0 0-.5528-.8944l-2.4159-1.208c-.5443-.2721-1.2035.001-1.3959.5782l-.2978.8933a1.2094 1.2094 0 0 1-1.3845.8035c-2.3938-.4787-4.265-2.3499-4.7437-4.7437a1.2094 1.2094 0 0 1 .8035-1.3845l1.1086-.3696a1 1 0 0 0 .6539-1.1912l-.586-2.3441A1 1 0 0 0 5.2192 1Z"
+                            stroke="#2D3A3A" /></svg>
+                    8(800)775-27-56
+                </a>
+                <p class="header__tel-disc">(Звонок бесплатный)</p>
+                <p class="header__work-time header__work-time--tel">Пн-Пт 9:00-18:00</p>
+            </div>
+            <div class="header__contact-wrap"><button class="header__contact-btn">Заказать звонок</button></div>
+            <!-- </div> -->
+        </div>
+
+        <div class="header__end ">
+            <div class="container">
+                <div class="header__end-wrap">
+                    <button class="burger header__end-burger">
+                        <span class="burger__inner header__burger-inner"></span>
+                    </button>
+                    <nav class="header__end-manu">
+                        <ul class="header__end-list">
+                            <li class="header__end-itom">
+                                <button class="header__end-btn">
+                                    <svg class="header__end-down" width="14" height="8" fill="currentcolor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m1 1 6 6 6-6" stroke="#fff" stroke-linecap="square" /></svg>
+                                    Каталог
+                                </button>
+                            </li>
+                            <li class="header__end-itom">
+                                <a class="header__end-link" href="#">Фирменные газонные травосмеси</a>
+                            </li>
+                            <li class="header__end-itom">
+                                <a class="header__end-link" href="#">Дешёвые травосмеси</a>
+                            </li>
+                            <li class="header__end-itom">
+                                <a class="header__end-link" href="#">Травосмесь на заказ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="header__catalog--end">
+                        <div class="header__catalog-wrap">
+                            <button class="header__catalog-burger">
+
+                            </button>
+                            <div class=" header__catalog-grass">
+                                <ul class=" header__catalog-list list-grass">
+                                    <li class="header__catalog-itom  header__catalog-btn">
+                                        <button class="header__end-ctbtn">
+                                            <svg class="header__end-svg" width="16" height="10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14 8 8 2 2 8" stroke="#2BA84A" stroke-width="2"
+                                                    stroke-linecap="square" /></svg>
+                                        </button>
+                                        <a class=" header__catalog-link header__catalog-link--top" href="#">
+                                            Фирменные и газонные травосмеси
+                                        </a>
+                                    </li>
+                                    <div class="header__ctitom-wrap">
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Для загородного и котеджного озеленения
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Низкорослые газоны
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Спортивные газоны
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Универсальные травосмеси
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Газоны без райграса
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Теневыносливые газоны
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Газоны и травосмеси для городского озелениения и служб ЖКХ
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Травосмеси для придорожного озеленения
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Для северных регионов
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Для южных регионов
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Травосмесь на заказ
+                                            </a>
+                                        </li>
+                                    </div>
+                                </ul>
+                                <ul class=" header__catalog-list catalog-cheap">
+                                    <li class="header__catalog-itom  header__catalog-btn">
+
+                                        <a class=" header__catalog-link  header__catalog-link--top " href="#">
+                                            Дешевые травосмеси
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header__catalog-pasture">
+                                <ul class=" header__catalog-list list-pastures">
+                                    <li class="header__catalog-itom  header__catalog-btn">
+                                        <button class="header__end-ctbtn">
+                                            <svg class="header__end-svg" width="16" height="10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14 8 8 2 2 8" stroke="#2BA84A" stroke-width="2"
+                                                    stroke-linecap="square" /></svg>
+                                        </button>
+                                        <a class=" header__catalog-link  header__catalog-link--top " href="#">
+                                            Фирменные кормовые травосмеси
+                                            (для пастбищ и сенокоса)
+                                        </a>
+                                    </li>
+
+                                    <div class="header__ctitom-wrap">
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Для сенокосного использования
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Для комбинированного использования
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Для пастбищного использования
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Люцерна
+                                            </a>
+                                        </li>
+                                    </div>
+
+                                </ul>
+                                <ul class=" header__catalog-list catalog-soil">
+                                    <li class="header__catalog-itom  header__catalog-btn">
+                                        <button class="header__end-ctbtn">
+                                            <svg class="header__end-svg" width="16" height="10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14 8 8 2 2 8" stroke="#2BA84A" stroke-width="2"
+                                                    stroke-linecap="square" /></svg>
+                                        </button>
+                                        <a class=" header__catalog-link header__catalog-link--top" href="#">
+                                            Сопутствующие товары для газонов
+                                            (удобрения, гербициды, укрывной материал)
+                                        </a>
+                                    </li>
+                                    <div class="header__ctitom-wrap">
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Удобрения для газона
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Гербициды для газона (от сорняков
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Гидрогель для растений
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Спанбонд (укрывной материал)
+                                            </a>
+                                        </li>
+                                    </div>
+                                </ul>
+                                <ul class=" header__catalog-list catalog-dsv">
+                                    <li class="header__catalog-itom  header__catalog-btn">
+
+                                        <a class=" header__catalog-link  header__catalog-link--top " href="#">
+                                            Семена газонных трав DSV (Германия)
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header__catalog-style">
+                                <ul class=" header__catalog-list list-style">
+                                    <li class="header__catalog-itom  header__catalog-btn">
+                                        <button class="header__end-ctbtn">
+                                            <svg class="header__end-svg" width="16" height="10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14 8 8 2 2 8" stroke="#2BA84A" stroke-width="2"
+                                                    stroke-linecap="square" /></svg>
+                                        </button>
+                                        <a class=" header__catalog-link header__catalog-link--top" href="#">
+                                            Семена многолетних трав (отдельные виды)
+                                        </a>
+                                    </li>
+                                    <div class="header__ctitom-wrap">
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Мятлик
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Овсяница
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Райграс
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Клевер (ползучий, луговой)
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Люцерна
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Щучка дернистая
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Полевица
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Тимофеевка луговая
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Кострец
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Фестулолиум
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Ежа сборная
+                                            </a>
+                                        </li>
+                                        <li class="header__catalog-itom">
+                                            <a class=" header__catalog-link" href="#">
+                                                Канареечник (двукисточник)
+                                            </a>
+                                        </li>
+                                    </div>
+                                </ul>
+                                <ul class="header__catalog-list">
+                                    <li class="header__catalog-itom  header__catalog-btn">
+                                        <a class=" header__catalog-link   header__catalog-link--top" href="#">
+                                            Компоненты для гидропосева газона
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <form method="get" action="#">
+                        <input class="header__end-search header__search" type="search" name="search"
+                            aria-label="site search helper" required placeholder="Поиск">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="catalog container">
+            <!-- <div class="container"> -->
+            <nav class="catalog__manu">
+                <div class="catalog__grass">
+                    <ul class="catalog__list list-grass">
+                        <li class="catalog__itom ">
+                            <a class="catalog__link header__catalog-link link-grassbtn catalog__link-top" href="#">
+                                Фирменные и газонные травосмеси
+                            </a>
+                        </li>
+                        <li class="catalog__itom ">
+                            <a class="catalog__link" href="#">
+                                Для загородного и котеджного озеленения
+                            </a>
+                        </li>
+                        <li class="catalog__itom ">
+                            <a class="catalog__link" href="#">
+                                Низкорослые газоны
+                            </a>
+                        </li>
+                        <li class="catalog__itom ">
+                            <a class="catalog__link" href="#">
+                                Спортивные газоны
+                            </a>
+                        </li>
+                        <li class="catalog__itom ">
+                            <a class="catalog__link" href="#">
+                                Универсальные травосмеси
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Газоны без райграса
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Теневыносливые газоны
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Газоны и травосмеси для городского озелениения и служб ЖКХ
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Травосмеси для придорожного озеленения
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Для северных регионов
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Для южных регионов
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Травосмесь на заказ
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="catalog__list header__catalog-list catalog-cheap">
+                        <li class="catalog__itom ">
+                            <a class="catalog__link catalog-cheapbtn catalog__link-top" href="#">
+                                Дешевые травосмеси
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog__pastures">
+                    <ul class="catalog__list header__catalog-list list-pastures">
+                        <li class="catalog__itom ">
+                            <a class="catalog__link link-pastbtn catalog__link-top" href="#">
+                                Фирменные кормовые травосмеси
+                                (для пастбищ и сенокоса)
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Для сенокосного использования
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Для комбинированного использования
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Для пастбищного использования
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Люцерна
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="catalog__list header__catalog-list catalog-soil">
+                        <li class="catalog__itom ">
+                            <a class="catalog__link catalog-soilbtn catalog__link-top" href="#">
+                                Сопутствующие товары для газонов
+                                (удобрения, гербициды, укрывной материал)
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Удобрения для газона
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Гербициды для газона (от сорняков
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Гидрогель для растений
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Спанбонд (укрывной материал)
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="catalog__list header__catalog-list catalog-dsv">
+                        <li class="catalog__itom ">
+                            <a class="catalog__link catalog-dsvbtn catalog__link-top" href="#">
+                                Семена газонных трав DSV (Германия)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog__style">
+                    <ul class="catalog__list header__catalog-list list-style">
+                        <li class="catalog__itom">
+                            <a class="catalog__link link-stylebtn catalog__link-top" href="#">
+                                Семена многолетних трав (отдельные виды)
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Мятлик
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Овсяница
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Райграс
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Клевер (ползучий, луговой)
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Люцерна
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Щучка дернистая
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Полевица
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Тимофеевка луговая
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Кострец
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Фестулолиум
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Ежа сборная
+                            </a>
+                        </li>
+                        <li class="catalog__itom">
+                            <a class="catalog__link" href="#">
+                                Канареечник (двукисточник)
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="catalog__list header__catalog-list catalog-cheap">
+                        <li class="catalog__itom ">
+                            <a class="catalog__link catalog__addbtn catalog__link-top" href="#">
+                                Компоненты для гидропосева газона
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- </div> -->
+        </div>
+
+
+        <div class="intro">
+            <div class="container intro__container">
+                <div class="intro__wrap">
+                    <span class="intro__wrap-cover"></span>
+                    <h1 class="intro__title">Семена газонных трав от производителя</h1>
+                    <p class="intro__disc">«Русские травы» — это оптовая компания-производитель семян многолетних трав,
+                        а также травосмесей для газонов различных типов в строгом соответствии с требованиями
+                        государственных стандартов. Качество нашей продукции соответствует ГОСТ Р 52 325-2005.</p>
+
+                    <a class="intro__link-btn btn" href="#">Подобрать травосмеси</a>
+                    <a class="intro__link-link" href="#">Дешевые травосмеси</a>
+                </div>
+
+                <picture>
+                    <source type="image/webp" srcset="img/intro@2x.webp 2x, img/intro.webp 1x">
+
+                    <img class="intro__img" src="img/intro.jpg" srcset="img/intro.jpg 1x, img/intro@2x.jpg 2x"
+                        alt="typ of soil" width="750" height="508">
+                </picture>
+            </div>
+        </div>
+    </main>
+
+
+
+</body>
+<script src="js/main.js"></script>
+
+</html>

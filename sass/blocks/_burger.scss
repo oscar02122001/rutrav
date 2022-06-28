@@ -1,0 +1,21 @@
+.burger {
+    // display: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+
+    &::before,
+    &::after,
+    &__inner {
+        display: block;
+        width: 36px;
+        height: 3px;
+        margin-bottom: 5px;
+        background-color: $titlecolor;
+        content: '';
+    }
+
+    &::after {
+        margin-bottom: 0;
+    }
+}

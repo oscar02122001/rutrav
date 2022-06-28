@@ -1,0 +1,56 @@
+/* open-sans-300 - latin */
+@font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 300;
+     font-display: swap;
+     src:
+          url('../fonts/open-sans-v29-latin-300.woff2') format('woff2'),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/open-sans-v29-latin-300.woff') format('woff');
+     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 400;
+     font-display: swap;
+     src:
+          url('../fonts/open-sans-v29-latin-regular.woff2') format('woff2'),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/open-sans-v29-latin-regular.woff') format('woff');
+     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+@font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 600;
+     font-display: swap;
+     src:
+          url('../fonts/open-sans-v29-latin-600.woff2') format('woff2'),
+          url('../fonts/open-sans-v29-latin-600.woff') format('woff');
+
+}
+
+@font-face {
+     font-family: 'Oswald';
+     src:
+     url('../fonts/oswald-v48-latin-regular.woff2') format('woff2'),
+     url('../fonts/oswald-v48-latin-regular.woff') format('woff');
+     font-style: normal;
+     font-weight: 400;
+     font-display: swap;
+    
+}
+@font-face {
+     font-family: 'Oswald';
+     src: url('../fonts/Oswald-Regular.woff2') format('woff2'),
+         url('../fonts/Oswald-Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+ }
+ 

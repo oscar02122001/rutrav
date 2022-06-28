@@ -1,0 +1,11 @@
+.btn{
+    display: inline-block;
+    background-color: $linkcolor;
+    color: #fff;
+    border-radius: 20px 0;
+
+    &:hover{
+        background-color: #ff2b01;
+        transition: 0.5s ease all;
+    }
+}
