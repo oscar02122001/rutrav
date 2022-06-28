@@ -622,6 +622,11 @@
         display: block;
         margin: 0;
 
+
+        &:focus{
+            color: #fff;
+        }
+
     }
 
     .header__catalog--end.active {

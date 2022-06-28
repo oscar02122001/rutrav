@@ -829,6 +829,9 @@ a {
     display: block;
     margin: 0;
   }
+  .header__search:focus {
+    color: #fff;
+  }
   .header__catalog--end.active {
     display: block;
     position: absolute;
