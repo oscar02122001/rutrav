@@ -4,18 +4,24 @@
     margin: 0 auto;
 }
 
-@media only screen and (max-width:1270px){
-    .container{
+@media only screen and (max-width:1270px) {
+    .container {
         max-width: 962px;
         padding: 0 15px;
         margin: 0 auto;
     }
 }
-@media only screen and (max-width:950px){
-    .container{
+
+@media only screen and (max-width:950px) {
+    .container {
         max-width: 768px;
         margin: 0 auto;
         padding: 0 15px;
+        
+    }
+}
+@media only screen and (max-width:768px){
+    .container{
         overflow: hidden;
     }
 }

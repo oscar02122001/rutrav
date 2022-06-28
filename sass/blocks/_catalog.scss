@@ -69,6 +69,31 @@
     display: block;
     
 }
+@media only screen and (max-width:950){
+    .catalog__manu {
+       
+        display: flex;
+       flex-direction: column;
+        justify-content: space-between;
+        background-color: #Fff;
+        width: 100%;
+    }
+    
+    .catalog__grass {
+        max-width: 391px;
+        margin-right: 10px;
+    }
+    
+    .catalog__pastures {
+        max-width: 371px;
+        margin-right: 10px;
+    }
+    
+    .catalog__style {
+        max-width: 365px;
+    }
+}
+    
 
 @media only screen and (max-width:768px){
    .catalog{
