@@ -3,7 +3,7 @@
 // }
 @keyframes manu-open {
     0% {
-        transform: translateY(-40px);
+        transform: translateY(-30px);
         opacity: 0;
 
     }
@@ -23,7 +23,7 @@
 
     100% {
         opacity: 1;
-        transform: translateY(-40px);
+        transform: translateY(-25px);
     }
 }
 
@@ -80,6 +80,8 @@
 
 .header {
     background-color: #FAFAEB;
+
+
 }
 
 .header__top {
@@ -623,7 +625,7 @@
         margin: 0;
 
 
-        &:focus{
+        &:focus {
             color: #fff;
         }
 

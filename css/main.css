@@ -67,6 +67,10 @@ body {
   min-height: 100vh;
 }
 
+.freez {
+  overflow: hidden;
+}
+
 img {
   max-width: 100%;
 }
@@ -116,8 +120,8 @@ a {
 
 @-webkit-keyframes manu-open {
   0% {
-    -webkit-transform: translateY(-40px);
-            transform: translateY(-40px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
     opacity: 0;
   }
   100% {
@@ -129,8 +133,8 @@ a {
 
 @keyframes manu-open {
   0% {
-    -webkit-transform: translateY(-40px);
-            transform: translateY(-40px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
     opacity: 0;
   }
   100% {
@@ -148,8 +152,8 @@ a {
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(-40px);
-            transform: translateY(-40px);
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
   }
 }
 
@@ -161,8 +165,8 @@ a {
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(-40px);
-            transform: translateY(-40px);
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
   }
 }
 

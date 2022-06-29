@@ -30,10 +30,11 @@ manu.addEventListener("animationend", function (evt) {
 
 const burgerr = document.querySelector(".header__end-burger");
 const header__manu = document.querySelector(".header__catalog--end");
-
+const body = document.querySelector("body");
 
 burgerr.addEventListener("click", function () {
     header__manu.classList.add("active")
+    body.classList.add("freez");
 })
 
 
@@ -41,24 +42,15 @@ burgerr.addEventListener("click", function () {
 const ctbtn = document.querySelector(".header__end-ctbtn");
 const ctitom = document.querySelector(".header__ctitom-wrap");
 
+
 ctbtn.addEventListener("click", function () {
     ctbtn.classList.toggle("active");
     ctitom.classList.toggle("active");
-    // if (!ctitom.classList.contains("active")) {
-    //     ctitom.classList.add("active");
-    // } else if (!ctitom.classList.contains("wrap-closed")) {
-    //     ctitom.classList.add("wrap-closed");
-    // }
+
 
 })
 
-// ctitom.addEventListener("animationend", function (evt) {
-//     // console.log(evt);
-//     if (evt.animationName === "wrap-closing") {
-//         ctitom.classList.remov("active");
-//         ctitom.classList.remove("wrap-closed");
-//     }
-// })
+
 
 
 
@@ -66,7 +58,9 @@ ctbtn.addEventListener("click", function () {
 const catalogbtn = document.querySelector(".header__catalog-burger");
 const ctmanu = document.querySelector(".header__catalog--end");
 
+
 catalogbtn.addEventListener("click", function () {
+    body.classList.remove("freez");
     ctmanu.classList.add("catalog-closed");
 })
 
