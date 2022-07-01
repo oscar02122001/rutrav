@@ -1,0 +1,238 @@
+.goods {
+    padding-top: 92px;
+    margin-bottom: 155px;
+    background-color: #F8F8F8;
+}
+
+.goods__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 37px;
+    align-items: center;
+}
+
+.goods__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    font-weight: 40;
+    line-height: 71px;
+    color: $titlecolor;
+}
+
+.goods__slider {
+    max-width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.goods__prev,
+.goods__next {
+    width: 70px;
+    height: 50px;
+    background-color: $titlecolor;
+    border-radius: 20px 0;
+    cursor: pointer;
+}
+
+.goods__prev {
+    // display:block;
+    transform: rotateY(180deg);
+    margin-right: 30px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        width: 10px;
+        height: 19px;
+        background-image: url("../img/arrow-goods.svg");
+        left: 50%;
+        bottom: 50%;
+        bottom: 0;
+        transform: translate(-50%, -90%) rotateY(180deg);
+
+        content: '';
+    }
+}
+
+.goods__next {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        width: 10px;
+        height: 19px;
+        background-image: url("../img/arrow-goods.svg");
+        left: 50%;
+        bottom: 50%;
+        bottom: 0;
+        transform: translate(-50%, -80%) rotate(180deg);
+        content: '';
+    }
+}
+
+.goods__list {
+    display: flex;
+    overflow: hidden;
+    // overflow-x: scroll;
+
+}
+
+.goods__itom {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    text-align: center;
+    padding: 41px 54px 35px 53px;
+    width: calc((100% - 60px) /3);
+    // max-width: 398px;
+    margin-right: 30px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 50px 0;
+    // overflow: hidden;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        transition: 0.5s ease all;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+}
+
+.goods__itom:hover .goods__itom-disc {
+    // text-decoration: underline;
+    color: $titlecolor;
+    transition: 0.4s ease all;
+}
+
+.goods__itom-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50px 0;
+}
+
+// .goods__itom-content{
+//     position: relative;
+// }
+.goods__itom-disc {
+    width: fit-content;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #2D3A3A;
+
+}
+
+.goods__price {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Oswald';
+    font-weight: 400;
+    line-height: 32px;
+    font-size: 24px;
+    color: #7D7D7D;
+
+    &-num {
+        color: #FF5F01;
+        ;
+    }
+}
+
+.goods__bottom-slider  {
+    display: none !important;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width:1270px) {
+    .goods__itom {
+        padding: 41px 34px 35px 33px;
+    }
+}
+
+@media only screen and (max-width:950px) {
+    .goods {
+        padding-top: 0;
+        padding-bottom: 150px;
+        margin-bottom: 0;
+    }
+
+    .goods__itom {
+        width: calc((100% - 30px) /2);
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .goods{
+        padding-top: 30px;
+        padding-bottom: 100px;
+        // margin-bottom: 100px;
+        position: relative;
+    }
+    .goods__top {
+        justify-content: center;
+    }
+
+    .goods__title {
+        font-size: 24px;
+    }
+
+    .goods__slider {
+        display: none;
+    }
+
+    .goods__itom {
+        padding: 30px 0;
+    }
+
+    .goods__itom-disc {
+        font-size: 22px;
+    }
+
+    .goods__bottom-slider {
+        display: flex !important;
+        position: absolute;
+        bottom: 7%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .goods__bottom-slider--limuzine {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:550px) {
+    .goods {
+        padding-bottom: 69px;
+        margin-bottom: 0;
+    }
+
+    .goods__itom {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 25px;
+    }
+
+    .goods__price {
+        position: relative;
+    }
+
+    .goods__bottom-slider--limuzine {
+        display: block;
+    }
+
+}

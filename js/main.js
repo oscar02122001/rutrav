@@ -71,3 +71,4 @@ ctmanu.addEventListener("animationend", function (evt) {
         ctmanu.classList.remove("catalog-closed");
     }
 })
+

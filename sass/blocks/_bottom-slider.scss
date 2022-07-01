@@ -1,0 +1,21 @@
+.bottom-slider  {
+    display: flex;
+    justify-content: center;
+}
+
+
+.bottom-slider__circle {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    background-color: #E4DFC2;
+    border-radius: 50%;
+
+    &:nth-of-type(4) {
+        margin-right: 0;
+    }
+
+    &:active {
+        background-color: $titlecolor;
+    }
+}

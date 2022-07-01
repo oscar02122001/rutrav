@@ -647,6 +647,16 @@
         margin-bottom: 15px;
     }
 
+    // .header__catalog-itom {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+    .header__catalog-top{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
 
     .header__catalog-wrap {
         padding: 63px 16px 46px 16px;
@@ -676,8 +686,8 @@
         margin-bottom: 15px;
         display: flex;
         justify-content: space-between;
-        flex-direction: row-reverse;
-        align-items: center;
+        flex-direction: column;
+        // align-items: center;
 
     }
 
