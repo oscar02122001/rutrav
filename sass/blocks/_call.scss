@@ -1,0 +1,222 @@
+.call{
+    margin-bottom: 100px;
+}
+
+.call__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 37px;
+}
+
+.call__title {
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.5;
+    color: #2BA84A;
+
+}
+
+.call__top-slider {
+    display: none;
+}
+
+.call__list {
+    display: flex;
+    // flex-wrap: nowrap;
+    // flex-shrink: 0;
+    margin-bottom: 36px;
+}
+
+.call__itom {
+    width: calc((100% - 50px) /4);
+    margin-right: 50px;
+
+    &:nth-of-type(5) {
+        margin-right: 0;
+    }
+}
+
+.call__shape {
+    margin-bottom: 21px;
+    display: inline-block;
+    width: 119px;
+    height: 95px;
+    background-color: #2BA84A;
+    border-radius: 0 30px;
+    position: relative;
+
+    &--growth::before {
+        position: absolute;
+        width: 52px;
+        height: 50px;
+        background-image: url("../img/growth.svg");
+        background-position: center center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: '';
+    }
+
+    &--gress::before {
+        position: absolute;
+        width: 65px;
+        height: 46px;
+        background-image: url("../img/grass.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: '';
+    }
+
+    &--bag::before {
+        position: absolute;
+        width: 40px;
+        height: 52px;
+        background-image: url("../img/bag.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: '';
+    }
+
+    &--mawine::before {
+        position: absolute;
+        width: 60px;
+        height: 40px;
+        background-image: url("../img/lawn-mower.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: '';
+    }
+
+    &--wallet::before {
+        position: absolute;
+        width: 55px;
+        height: 54px;
+        background-image: url("../img/wallet.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: '';
+    }
+}
+
+
+.call__disc {
+    font-size: 18px;
+    line-height: 25px;
+    color: #2D3A3A;
+
+}
+
+.call__bottom-slider {
+    display: none;
+}
+
+.call__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.call__btn-link {
+    
+    padding: 15px 33px 14px 33px;
+    font-size: 18px;
+    line-height: 25px;
+
+}
+
+@media only screen and (max-width:1270px) {
+    .call__itom {
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width:950px) {
+    .call__list {
+        overflow: hidden;
+    }
+
+    .call__top-slider {
+        display: flex;
+    }
+
+    .call__itom {
+        display: flex;
+        flex-direction: column;
+        width: calc((100% -40px) /3);
+        flex-shrink: 0;
+        flex-wrap: wrap;
+        margin-right: 21px;
+
+
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .call{
+        margin-bottom: 60px;
+    }
+    .call__top-slider {
+        display: none;
+    }
+
+    .call__title {
+        font-size: 24px;
+        line-height: 1.25;
+        margin-bottom: 10px;
+    }
+
+    .call__list {
+        margin-bottom: 25px;
+    }
+
+    .call__itom {
+        width: calc((100% - 20px) /2);
+        margin-right: 20px;
+    }
+
+    .call__bottom-slider {
+        display: flex;
+
+        // &--mawine{
+        //    margin: unset;
+        //    margin-right: 20px !important;
+        // }
+        &--wallet {
+            display: none;
+            margin-right: 0;
+        }
+    }
+    .call__btn{
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .call__list {
+        margin-bottom: 14px;
+    }
+
+    .call__itom {
+        // width: calc((100% - 20px) /1);
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .call__btn{
+        margin-top: 30px;
+    }
+}

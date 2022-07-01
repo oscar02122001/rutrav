@@ -1,0 +1,50 @@
+.top-slider {
+    max-width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-slider__prev,
+.top-slider__next {
+    width: 70px;
+    height: 50px;
+    background-color: $titlecolor;
+    border-radius: 20px 0;
+    cursor: pointer;
+}
+
+.top-slider__prev {
+    // display:block;
+    transform: rotateY(180deg);
+    margin-right: 30px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        width: 10px;
+        height: 19px;
+        background-image: url("../img/arrow-goods.svg");
+        left: 50%;
+        bottom: 50%;
+        bottom: 0;
+        transform: translate(-50%, -90%) rotateY(180deg);
+
+        content: '';
+    }
+}
+
+.top-slider__next {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        width: 10px;
+        height: 19px;
+        background-image: url("../img/arrow-goods.svg");
+        left: 50%;
+        bottom: 50%;
+        bottom: 0;
+        transform: translate(-50%, -80%) rotate(180deg);
+        content: '';
+    }
+}
