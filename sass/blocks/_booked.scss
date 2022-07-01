@@ -1,0 +1,167 @@
+.booked {
+    background-color: #E4DFC2;
+    margin-bottom: 118px;
+    // display: none;
+}
+
+.booked__container {
+    padding-top: 122px;
+    padding-bottom: 143px;
+    display: flex;
+    justify-content: end;
+    position: relative;
+  
+}
+
+.booked__content {
+    max-width: 826px;
+    z-index: 1;
+}
+
+.booked__title {
+    margin-bottom: 17px;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 71px;
+    color: #2BA84A;
+}
+
+.booked__disc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #2D3A3A;
+    margin-bottom: 13px;
+
+    &--end {
+        margin-bottom: 0;
+    }
+
+    &--bold {
+        margin-bottom: 8px;
+    }
+
+    &--itom {
+        margin-bottom: 0;
+    }
+}
+
+.booked__list {
+    @include reset-list;
+    margin-bottom: 13px;
+}
+
+.booked__itom {
+    display: flex;
+    align-items: center;
+}
+
+.booked__circle {
+    display: inline-block;
+    margin-right: 9px;
+    width: 10px;
+    height: 10px;
+    background-color: #2BA84A;
+    border-radius: 50%;
+}
+
+.booked__img {
+    position: absolute;
+    width: 1153px;
+    height: 768px;
+    object-fit: cover;
+    top: 73px;
+    left: -356px;
+    // z-index: -1;
+}
+
+.booked__bag-img {
+    position: absolute;
+    width: 281px;
+    height: 421px;
+    left: 0;
+    bottom: -95px;
+    // z-index: 3;
+}
+
+@media only screen and (max-width:1270px) {
+    .booked__container {
+        position: relative;
+    }
+
+    .booked__content {
+        max-width: 696px;
+    }
+
+    .booked__img {
+        position: absolute;
+        width: 400px;
+        height: 600px;
+        left: -110px;
+        top: unset;
+        bottom: 0;
+        object-fit: cover;
+    }
+
+    .booked__bag-img {
+        width: 245px;
+        height: 343px;
+        object-fit: cover;
+        left: -130px;
+        bottom: -90px;
+    }
+}
+
+@media only screen and (max-width:950px) {
+    .booked__container {
+        padding-top: 100px;
+        padding-bottom: 350px;
+    }
+
+
+
+    .booked__content {
+        max-width: 100%;
+    }
+
+    .booked__img {
+        width: 270px;
+        height: 347px;
+        // left: -120px;
+        left: 0;
+        object-fit: cover;
+    }
+
+    .booked__bag-img {
+        
+        width: 90px;
+        height: 223px;
+        right: unset;
+        left: 200px;
+        top: unset;
+        // right: unset;
+        bottom: -40px;
+        object-fit: cover;
+        // z-index: 1;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .booked__container {
+        padding-top: 60px;
+        overflow: unset;
+    }
+
+    .booked__title {
+        font-size: 24px;
+        line-height: 1.25;
+        margin-bottom: 12px;
+    }
+
+    .booked__disc {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+   
+}

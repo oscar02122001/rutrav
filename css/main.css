@@ -2113,4 +2113,168 @@ a {
 .bottom-slider__circle:active {
   background-color: #2BA84A;
 }
+
+.booked {
+  background-color: #E4DFC2;
+  margin-bottom: 118px;
+}
+
+.booked__container {
+  padding-top: 122px;
+  padding-bottom: 143px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  position: relative;
+}
+
+.booked__content {
+  max-width: 826px;
+  z-index: 1;
+}
+
+.booked__title {
+  margin-bottom: 17px;
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 71px;
+  color: #2BA84A;
+}
+
+.booked__disc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #2D3A3A;
+  margin-bottom: 13px;
+}
+
+.booked__disc--end {
+  margin-bottom: 0;
+}
+
+.booked__disc--bold {
+  margin-bottom: 8px;
+}
+
+.booked__disc--itom {
+  margin-bottom: 0;
+}
+
+.booked__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 13px;
+}
+
+.booked__itom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.booked__circle {
+  display: inline-block;
+  margin-right: 9px;
+  width: 10px;
+  height: 10px;
+  background-color: #2BA84A;
+  border-radius: 50%;
+}
+
+.booked__img {
+  position: absolute;
+  width: 1153px;
+  height: 768px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 73px;
+  left: -356px;
+}
+
+.booked__bag-img {
+  position: absolute;
+  width: 281px;
+  height: 421px;
+  left: 0;
+  bottom: -95px;
+}
+
+@media only screen and (max-width: 1270px) {
+  .booked__container {
+    position: relative;
+  }
+  .booked__content {
+    max-width: 696px;
+  }
+  .booked__img {
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    left: -110px;
+    top: unset;
+    bottom: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .booked__bag-img {
+    width: 245px;
+    height: 343px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    left: -130px;
+    bottom: -90px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .booked__container {
+    padding-top: 100px;
+    padding-bottom: 350px;
+  }
+  .booked__content {
+    max-width: 100%;
+  }
+  .booked__img {
+    width: 270px;
+    height: 347px;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .booked__bag-img {
+    width: 90px;
+    height: 223px;
+    right: unset;
+    left: 200px;
+    top: unset;
+    bottom: -40px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .booked__container {
+    padding-top: 60px;
+    overflow: unset;
+  }
+  .booked__title {
+    font-size: 24px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+  }
+  .booked__disc {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+}
 /*# sourceMappingURL=main.css.map */
