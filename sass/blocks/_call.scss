@@ -205,6 +205,10 @@
 }
 
 @media only screen and (max-width:500px) {
+    .call__title{
+        text-align: center;
+        margin: 0 auto;
+    }
     .call__list {
         margin-bottom: 14px;
     }

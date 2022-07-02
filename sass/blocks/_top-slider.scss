@@ -11,6 +11,10 @@
     background-color: $titlecolor;
     border-radius: 20px 0;
     cursor: pointer;
+
+    &:hover{
+        background-color: #177d30;
+    }
 }
 
 .top-slider__prev {
