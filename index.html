@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -52,7 +52,13 @@
                         <input class="header__top-sign" type="button" name="sign" aria-label="site sign in"
                             value="Регистрация">
 
-                        <input class="header___top-city" type="button" name="city" value="Москва">
+                        <div class="header__select">
+                            <input class="header__top-city" type="button" name="city" value="Москва">
+                            <div class="header__city-bottom">
+                                <div class="header__city"><a class="header__maskov" href="index.html">Москва</a></div>
+                                <div class="header__city"><a class="header__rostov" href="#">Ростов-на-Дону</a></div>
+                            </div>
+                        </div>
                     </div>
 
                 </form>
@@ -795,8 +801,8 @@
                     <h2 class="goods__title">Популярные товары</h2>
 
                     <div class="top-slider goods__top-slider">
-                        <div class="top-slider__prev goods__top-slider--prev"></div>
-                        <div class="top-slider__next  goods__top-slider--next"></div>
+                        <div class="top-slider__prev goods__top-slider goods__top-slider--prev"></div>
+                        <div class="top-slider__next goods__top-slider  goods__top-slider--next"></div>
                     </div>
                 </div>
 
@@ -984,8 +990,8 @@
                         Наш специалист проконсультирует
                     </h2>
                     <div class="top-slider call__top-slider">
-                        <div class="top-slider__prev call__top-slider--prev"></div>
-                        <div class="top-slider__next  call__top-slider--next"></div>
+                        <div class="top-slider__prev  call__top-slider call__top-slider--prev"></div>
+                        <div class="top-slider__next  call__top-slider  call__top-slider--next"></div>
                     </div>
                 </div>
 
@@ -1119,11 +1125,222 @@
                             height="130">
                     </div>
                 </div>
-                
+
             </div>
         </div>
 
     </main>
+
+    <div class="footer">
+        <div class="container footer__container">
+            <div class="footer__wrap">
+                <div class="footer__logo-clmn">
+                    <a class="footer__logo-link" href="index.html">
+                        <img class="footer__logo" src="img/logo.svg" alt="Footer site logo">
+                    </a>
+                    <p class="footer__disc footer__disc--logo">Copyright 2021 ©.
+                        Агрофирма Русские Травы. Все права защищены.</p>
+                </div>
+
+                <div class="footer__inform">
+                    <h3 class="footer__title">Информация</h3>
+
+                    <div class="footer__list">
+                        <div class="footer__list-top">
+                            <div class="footer__itom">
+                                <a class="footer__disc footer__disc-list" href="#">Главная</a>
+                            </div>
+                            <div class="footer__itom">
+                                <a class="footer__disc footer__disc-list" href="#">Каталог</a>
+                            </div>
+                            <div class="footer__itom">
+                                <a class="footer__disc footer__disc-list" href="#">О компании
+                                </a>
+                            </div>
+                            <div class="footer__itom">
+                                <a class="footer__disc footer__disc-list" href="#">Оплата</a>
+                            </div>
+                        </div>
+                        <div class="footer__list-end">
+
+                            <div class="footer__itom">
+                                <a class="footer__disc footer__disc-list" href="#">Доставка</a>
+                            </div>
+                            <div class="footer__itom">
+                                <a class="footer__disc footer__disc-list" href="#">Полезные статьи
+                                </a>
+                            </div>
+                            <div class="footer__itom">
+                                <a class="footer__disc footer__disc-list" href="#">Контакты</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="footer__pay">
+                    <h3 class="footer__title">Способы оплаты</h3>
+                    <div class="footer__pay-imgs">
+                        <div class="footer__pay-img">
+                            <span class="footer__pay-maker">
+                                <svg class=" footer__pay-visa" width="48" height="16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m20.0756.6875-2.369 14.7422h3.7866L23.8607.6875h-3.7851Zm11.4217 6.0052c-1.3232-.6535-2.1344-1.0945-2.1344-1.7629.0162-.6076.686-1.2302 2.1817-1.2302 1.2302-.0309 2.1344.2582 2.8204.5459l.3436.1534.5148-3.0845c-.7479-.289-1.9338-.6076-3.3986-.6076-3.7394 0-6.3724 1.9441-6.3888 4.7247-.0309 2.052 1.8852 3.1906 3.3191 3.8737 1.4648.7006 1.9634 1.1549 1.9634 1.7775-.0162.9558-1.1844 1.3968-2.2746 1.3968-1.5104 0-2.3217-.2271-3.5534-.7597l-.4986-.2271-.5296 3.2054c.8895.3954 2.5254.7434 4.2233.7612 3.9739 0 6.5597-1.9147 6.5923-4.8781.0129-1.6257-.9974-2.8708-3.1806-3.8886ZM44.931.733h-2.9296c-.9028 0-1.5887.2597-1.9796 1.186l-5.6246 13.5106h3.9739l1.0945-2.9251h4.446l.5679 2.9369h3.5049L44.931.7331Zm-4.3633 8.8196c.0766.0074 1.5253-4.775 1.5253-4.775l1.1535 4.775h-2.6788ZM14.5425.6875l-3.7099 10.016-.4041-1.9753c-.686-2.279-2.8366-4.7556-5.2367-5.9859L8.589 15.415h4.0065L18.549.6891h-4.0065V.6875Z"
+                                        fill="#2394BC" />
+                                    <path
+                                        d="M9.1805 2.5896C8.8914 1.4654 7.9694.7072 6.7171.6911H.8418L.7813.9639c4.5832 1.13 8.4301 4.6067 9.6781 7.877L9.1805 2.5896Z"
+                                        fill="#EFC75E" /></svg>
+                            </span>
+                        </div>
+                        <div class="footer__pay-img">
+                            <span class="footer__pay-maker">
+                                <svg id="svg2985" style="enable-background:new 0 0 564.5 366.9" version="1.1"
+                                    viewBox="0 0 564.5 366.9" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                    <style>
+                                        .st0 {
+                                            fill: #f79f1a
+                                        }
+                                    </style>
+                                    <g id="g3125" transform="translate(-67.0259 -37.7116) scale(1.21528)">
+                                        <g id="g3115">
+                                            <g id="g3110">
+                                                <path class="st0"
+                                                    d="M519.7 182.2c0 79.5-64.3 143.9-143.6 143.9s-143.6-64.4-143.6-143.9S296.7 38.3 376 38.3s143.7 64.4 143.7 143.9z"
+                                                    id="path2997" />
+                                                <path
+                                                    d="M342.4 182.2c0 79.5-64.3 143.9-143.6 143.9S55.2 261.7 55.2 182.2 119.5 38.3 198.8 38.3s143.6 64.4 143.6 143.9z"
+                                                    id="path2995" style="fill:#ea001b" />
+                                                <path
+                                                    d="M287.4 68.9c-33.5 26.3-55 67.3-55 113.3s21.5 87 55 113.3c33.5-26.3 55-67.3 55-113.3s-21.5-86.9-55-113.3z"
+                                                    id="path2999" style="fill:#ff5f01" />
+                                            </g>
+                                            <g id="g3043" transform="matrix(1.27042 0 0 1.27042 507.5305 240.7031)">
+                                                <g id="text3045">
+                                                    <path class="st0"
+                                                        d="M9.3 14.1v-4h-1l-1.2 2.8L5.9 10H4.8v4h.7v-3l1.1 2.6h.8L8.6 11v3.1h.7zm-6.7 0v-3.4H4V10H.6v.7H2v3.4h.6z"
+                                                        id="path3057" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="footer__pay-img">
+                            <span class="footer__pay-maker">
+
+                                <svg class="footer__pay-svg" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M30.0204 13.2262V7.38156C30.0204 6.30612 29.1476 5.43335 28.0722 5.43335H2.74502C1.66958 5.43324 0.796814 6.30612 0.796814 7.38156V23.9416C0.796814 25.0171 1.66958 25.8898 2.74502 25.8898H28.0722C29.1476 25.8898 30.0204 25.0171 30.0204 23.9416V18.0969C31.0958 18.0969 31.9686 17.2241 31.9686 16.1487V15.1745C31.9688 14.0991 31.0968 13.2262 30.0204 13.2262Z"
+                                        fill="#A66333" />
+                                    <path
+                                        d="M5.66739 0.5625H25.1498C26.2253 0.5625 27.098 1.43527 27.098 2.51167V16.1484C27.098 17.2248 26.2253 18.0966 25.1498 18.0966H5.66739C4.59195 18.0966 3.71918 17.2238 3.71918 16.1484V2.51167C3.71918 1.43527 4.59195 0.5625 5.66739 0.5625Z"
+                                        fill="#E4E7E7" />
+                                    <path
+                                        d="M9.82113 5.45376C9.82113 5.45376 11.0028 5.43335 12.1191 5.43335C13.2365 5.43335 13.4342 7.31147 13.4342 7.31147C13.4342 7.31147 13.4546 9.27624 13.4546 9.76044C13.4546 10.2456 12.4932 11.207 12.4932 11.207V12.1938L15.4165 13.3627V15.1746H6.63573L6.64545 13.3248L9.57166 12.2036V11.2373C9.57166 11.2373 8.59954 10.3674 8.59954 9.76055V7.31137C8.59954 7.31137 8.6833 5.45376 9.82113 5.45376Z"
+                                        fill="#868686" />
+                                    <path d="M23.2016 9.32959H16.3828V11.2778H23.2016V9.32959Z" fill="#B7BBBD" />
+                                    <path d="M23.2016 5.43311H16.3828V7.38228H23.2016V5.43311Z" fill="#B7BBBD" />
+                                    <path
+                                        d="M25.1498 0.5625H5.66739C4.59195 0.5625 3.71918 1.43527 3.71918 2.51167V3.48487H27.0981V2.51167C27.098 1.43527 26.2262 0.5625 25.1498 0.5625Z"
+                                        fill="#B7BBBD" />
+                                    <path
+                                        d="M2.74502 8.3564L24.1757 11.2778C25.2511 11.2778 26.1239 12.1506 26.1239 13.226V29.7861C26.1239 30.8615 25.2511 31.7343 24.1757 31.7343L2.74502 28.812C1.66958 28.812 0.796814 27.9391 0.796814 26.8637V6.40723C0.796814 7.49047 1.66958 8.3564 2.74502 8.3564Z"
+                                        fill="#F4B459" />
+                                    <path
+                                        d="M21.7404 18.0967C22.5469 18.0967 23.2015 18.7513 23.2015 19.5578C23.2015 20.3643 22.5469 21.0189 21.7404 21.0189C20.9338 21.0189 20.2792 20.3653 20.2792 19.5578C20.2792 18.7503 20.9338 18.0967 21.7404 18.0967Z"
+                                        fill="#E4E7E7" />
+                                    <path
+                                        d="M2.74502 28.812L24.1757 31.7344C25.2511 31.7344 26.1239 30.8616 26.1239 29.7861V25.8896L2.74502 22.9673C1.66958 22.9673 0.796814 22.1012 0.796814 21.019V26.8638C0.796814 27.9401 1.66958 28.812 2.74502 28.812Z"
+                                        fill="#D07C40" />
+                                    <path
+                                        d="M27.0981 17.1225C27.0981 17.1225 31.9686 16.1065 31.9686 15.1743V18.0967C31.9686 18.0967 31.0959 20.0449 30.0204 20.0449L27.0981 21.0191C26.0216 21.0191 25.1498 20.1463 25.1498 19.0708C25.1498 17.9953 26.0227 17.1225 27.0981 17.1225Z"
+                                        fill="#D07C40" />
+                                </svg>
+
+                            </span>
+                        </div>
+                        <div class="footer__pay-img">
+                            <span class="footer__pay-maker footer__pay-maker--last">
+                                <svg class="footer__pay-svg" width="28" height="30" viewBox="0 0 28 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.59369 0.5625H26.5312C27.0237 0.5625 27.4219 0.961529 27.4219 1.45316V29.0626L24.7375 26.3907L22.0834 29.0626L19.4026 26.3907L16.7165 29.0626L14.0392 26.3907L11.3744 29.0626L8.70081 26.3907L6.04142 29.0626L3.37491 26.3907L0.703125 29.0626V1.45316C0.703125 0.961529 1.10206 0.5625 1.59369 0.5625Z"
+                                        fill="#E4E7E7" />
+                                    <path d="M14.9531 20.1458H4.26556V21.9252H14.9531V20.1458Z" fill="#E2574C" />
+                                    <path
+                                        d="M22.0781 16.5848V18.3749H23.8593V16.5848H22.0781ZM4.26556 18.3625H20.2969V16.583H4.26556V18.3625Z"
+                                        fill="#868686" />
+                                    <path
+                                        d="M4.26556 13.9221H6.04679V4.12524H4.26556V13.9221ZM7.82811 13.9221H10.5V4.12524H7.82811V13.9221ZM18.5156 13.9221H19.4063V4.12524H18.5156V13.9221ZM21.1875 4.12524V13.9221H23.8594V4.12524H21.1875ZM14.9531 13.9221H16.7343V4.12524H14.9531V13.9221ZM12.2812 13.9221H13.1719V4.12524H12.2812V13.9221Z"
+                                        fill="#2494BC" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <p class="footer__disc footer__disc--pay">
+                        Мы зарегистрированы<br>
+                        на <a class="footer__pay-link" href="#">Портале поставщиков</a>
+                    </p>
+                </div>
+
+                <div class="footer__contact">
+                    <h3 class="footer__title">Contact</h3>
+                    <div class="footer__contact-wrap">
+                        <a class="footer__contact-link" href="tel:+7(495)777-90-87">
+                            <svg class="footer__con-svg" width="16" height="16" fill="transparent"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.2192 1H3c-1.1046 0-2 .8954-2 2v2c0 5.5228 4.4771 10 10 10h2c1.1046 0 2-.8954 2-2v-1.382a1 1 0 0 0-.5528-.8944l-2.4159-1.208c-.5443-.2721-1.2035.001-1.3959.5782l-.2978.8933a1.2094 1.2094 0 0 1-1.3845.8035c-2.3938-.4787-4.265-2.3499-4.7437-4.7437a1.2094 1.2094 0 0 1 .8035-1.3845l1.1086-.3696a1 1 0 0 0 .6539-1.1912l-.586-2.3441A1 1 0 0 0 5.2192 1Z"
+                                    stroke="CurrentColor" /></svg>
+                            +7 (495) 777-90-87
+                        </a>
+                        <a class="footer__contact-link" href="tel:8(800)775-27-56">
+                            <svg class="footer__con-svg" width="16" height="16" fill="transparent"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.2192 1H3c-1.1046 0-2 .8954-2 2v2c0 5.5228 4.4771 10 10 10h2c1.1046 0 2-.8954 2-2v-1.382a1 1 0 0 0-.5528-.8944l-2.4159-1.208c-.5443-.2721-1.2035.001-1.3959.5782l-.2978.8933a1.2094 1.2094 0 0 1-1.3845.8035c-2.3938-.4787-4.265-2.3499-4.7437-4.7437a1.2094 1.2094 0 0 1 .8035-1.3845l1.1086-.3696a1 1 0 0 0 .6539-1.1912l-.586-2.3441A1 1 0 0 0 5.2192 1Z"
+                                    stroke="CurrentColor" /></svg>
+                            8 (800) 775-27-56
+                        </a>
+                        <a class="footer__contact-link" href="#">
+                            <svg class="footer__con-svg" width="16" height="16" fill="transparent"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m15 1 .4596.197a.5002.5002 0 0 0-.6566-.6566L15 1ZM1 7l-.197-.4596a.5.5 0 0 0-.0602.8883L1 7Zm8 8-.4288.2572a.5.5 0 0 0 .8884-.0602L9 15ZM14.803.5404l-14 6 .394.9192 14-6-.394-.9192ZM.7428 7.4287l5 3 .5145-.8575-5-3-.5145.8575Zm4.8285 2.8285 3 5 .8575-.5144-3-5-.8575.5144Zm3.8883 4.9398 6-14-.9192-.394-6 14 .9192.394ZM14.6464.6464l-9 9 .7072.7072 9-9-.7072-.7072Z"
+                                    fill="CurrentColor" /></svg>
+                            Gazon77Bot
+                        </a>
+                        <a class="footer__contact-link" href="#">
+                            <svg class="footer__con-svg" width="16" height="14" fill="transparent"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m1 4 7 4 7-4M2 1h12c.5523 0 1 .4477 1 1v10c0 .5523-.4477 1-1 1H2c-.5523 0-1-.4477-1-1V2c0-.5523.4477-1 1-1Z"
+                                    stroke="CurrentColor" /></svg>
+                            info@rutrav.ru
+                        </a>
+                    </div>
+                    <div class="footer__location">
+                        <svg class="footer__loc-svg" width="14" height="16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd"
+                                d="M7 8.9948c1.104 0 2-.8955 2-1.9987 0-1.1033-.896-1.9987-2-1.9987S5 5.8928 5 6.996c0 1.1032.896 1.9987 2 1.9987Z"
+                                stroke="#E5E5E5" stroke-linecap="square" />
+                            <path clip-rule="evenodd"
+                                d="M13 6.996c0 4.9968-5 7.9949-6 7.9949s-6-2.9981-6-7.9948C1 3.6852 3.687 1 7 1s6 2.6852 6 5.996Z"
+                                stroke="#E5E5E5" stroke-linecap="square" />
+                        </svg>
+                        <p class="footer__disc">
+                            г.Москва, ул. Прянишникова, 19А стр.4
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="js/main.js"></script>

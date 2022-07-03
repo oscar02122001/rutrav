@@ -28,6 +28,18 @@ manu.addEventListener("animationend", function (evt) {
     }
 })
 
+const header__city = document.querySelector(".header__top-city");
+const header__select = document.querySelector(".header__select");
+
+
+header__city.addEventListener("click", function () {
+    header__select.classList.toggle("active");
+    header__city.classList.toggle("active");
+})
+
+
+
+
 const burgerr = document.querySelector(".header__end-burger");
 const header__manu = document.querySelector(".header__catalog--end");
 const body = document.querySelector("body");
@@ -71,4 +83,3 @@ ctmanu.addEventListener("animationend", function (evt) {
         ctmanu.classList.remove("catalog-closed");
     }
 })
-
