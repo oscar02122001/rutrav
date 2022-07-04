@@ -3256,4 +3256,267 @@ a {
   display: none;
   opacity: 0;
 }
+
+@-webkit-keyframes leave-open {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes leave-open {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.leave {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.leave-opened {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.leave__wrap {
+  display: none;
+  padding: 30px;
+  width: 500px;
+  margin: auto auto;
+  background-color: transparent;
+}
+
+.leave__wrap--opened {
+  display: block;
+  -webkit-animation: leave-open 0.4s linear;
+          animation: leave-open 0.4s linear;
+}
+
+.leave__top {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 20px;
+  background-color: #2BA84A;
+  border-top-right-radius: 30px;
+}
+
+.leave__qst {
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+
+.leave__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+  background-color: #fff;
+  border-bottom-left-radius: 30px;
+}
+
+.leave__link--wrap {
+  width: 60px;
+  height: 30px;
+  background-color: #FF5F01;
+  border: 1px solid #FF5F01;
+  border-radius: 10px 0;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  color: #fff;
+}
+
+.leave__link--wrap:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.leave__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+@-webkit-keyframes sign-open {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes sign-open {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.sign-in {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: none;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.sign-in__opened {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sign-in__wrap {
+  display: none;
+  width: 500px;
+  margin: auto auto;
+  padding: 20px;
+  color: transparent;
+}
+
+.sign-in__wrap--opened {
+  display: block;
+  -webkit-animation: sign-open 0.4s linear;
+          animation: sign-open 0.4s linear;
+}
+
+.sign-in__top {
+  padding: 30px;
+  position: relative;
+  background-color: #2BA84A;
+  border-top-right-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sign-in__img {
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-color: #888;
+  border: 2px solid #2BA84A;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.sign-in__svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.sign-in__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #222;
+  background-color: #fff;
+  border-bottom-left-radius: 30px;
+}
+
+.sign-in__input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  border-radius: 15px;
+  border: 2px solid #777;
+}
+
+.sign-in__input:focus {
+  outline: 2px solid;
+  outline-color: #2BA84A;
+}
+
+.sign-in__sub {
+  padding: 10px 0;
+  background-color: #2BA84A;
+  border: 2px solid transparent;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.sign-in__sub:hover {
+  color: #222;
+  background-color: #fff;
+  border: 2px solid #2BA84A;
+}
+
+.sign-in__label--psw {
+  text-transform: capitalize;
+}
+
+.sign-in__psw-input {
+  margin-top: -9px;
+  margin-bottom: 15px;
+}
+
+.sign-in__link {
+  text-decoration: underline;
+}
+
+.sign-in__link:hover {
+  text-decoration: none;
+}
 /*# sourceMappingURL=main.css.map */

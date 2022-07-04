@@ -135,3 +135,49 @@ if (cross) {
         body.classList.remove("freez")
     })
 }
+
+const leavebtn = document.querySelector(".header__top-leave");
+const leave = document.querySelector(".leave");
+const leavewrap = document.querySelector(".leave__wrap");
+const leavecross = document.querySelector(".leave__cross");
+
+leavebtn.addEventListener("click", function () {
+    leave.classList.add("leave-opened");
+    leavewrap.classList.add("leave__wrap--opened")
+    body.classList.add("freez")
+})
+
+leave.addEventListener("click", function (evt) {
+    if (evt.target.matches(".leave")) {
+        leave.classList.remove("leave-opened");
+        body.classList.remove("freez")
+    }
+})
+
+leavecross.addEventListener("click", function () {
+    leave.classList.remove("leave-opened");
+    body.classList.remove("freez")
+})
+
+const signbtn = document.querySelector(".header__top-sign");
+const signin = document.querySelector(".sign-in");
+const signinwrap = document.querySelector(".sign-in__wrap");
+const signcross = document.querySelector(".sign-in__cross");
+
+signbtn.addEventListener("click", function () {
+    signin.classList.add("sign-in__opened");
+    signinwrap.classList.add("sign-in__wrap--opened");
+    body.classList.add("freez")
+})
+
+signin.addEventListener("click", function (evt) {
+    if (evt.target.matches(".sign-in")) {
+        signin.classList.remove("sign-in__opened")
+        body.classList.remove("freez");
+    }
+})
+
+signcross.addEventListener("click", function () {
+    signin.classList.remove("sign-in__opened");
+    body.classList.remove("freez")
+})
