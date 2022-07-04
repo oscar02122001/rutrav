@@ -83,3 +83,55 @@ ctmanu.addEventListener("animationend", function (evt) {
         ctmanu.classList.remove("catalog-closed");
     }
 })
+
+const callme = document.querySelector(".call-me");
+const personalmodal = document.querySelector(".personal-modal");
+const cross = document.querySelector(".personal-modal__cross");
+
+if (callme) {
+    callme.addEventListener("click", function () {
+        personalmodal.classList.add("personal-modal--opened");
+        body.classList.add("freez")
+    })
+}
+if (personalmodal) {
+    personalmodal.addEventListener("click", function (evt) {
+        if (evt.target.matches(".personal-modal")) {
+            personalmodal.classList.remove("personal-modal--opened")
+            body.classList.remove("freez")
+        }
+    })
+}
+
+if (cross) {
+    cross.addEventListener("click", function () {
+        personalmodal.classList.remove("personal-modal--opened");
+        body.classList.remove("freez")
+    })
+}
+
+
+
+const callbtn = document.querySelector(".call__btn");
+
+if (callbtn) {
+    callbtn.addEventListener("click", function () {
+        personalmodal.classList.add("personal-modal--opened");
+        body.classList.add("freez")
+    })
+}
+if (personalmodal) {
+    personalmodal.addEventListener("click", function (evt) {
+        if (evt.target.matches(".personal-modal")) {
+            personalmodal.classList.remove("personal-modal--opened")
+            body.classList.remove("freez")
+        }
+    })
+}
+
+if (cross) {
+    cross.addEventListener("click", function () {
+        personalmodal.classList.remove("personal-modal--opened");
+        body.classList.remove("freez")
+    })
+}

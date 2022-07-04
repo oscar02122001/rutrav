@@ -127,16 +127,15 @@
 
 .call__btn {
     display: flex;
-    justify-content: center;
-}
-
-.call__btn-link {
-    
+    border: none;
     padding: 15px 33px 14px 33px;
     font-size: 18px;
     line-height: 25px;
-
+    margin: 0 auto;
+    cursor: pointer;
 }
+
+
 
 @media only screen and (max-width:1270px) {
     .call__itom {

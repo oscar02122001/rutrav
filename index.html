@@ -113,7 +113,9 @@
                 <p class="header__tel-disc">(Звонок бесплатный)</p>
                 <p class="header__work-time header__work-time--tel">Пн-Пт 9:00-18:00</p>
             </div>
-            <div class="header__contact-wrap"><button class="header__contact-btn">Заказать звонок</button></div>
+            <div class="header__contact-wrap">
+                <button class="header__contact-btn call-me">Заказать звонок</button>
+            </div>
         </div>
 
         <div class="header__end ">
@@ -1033,9 +1035,9 @@
                     <div class="bottom-slider__circle call__bottom-slider--wallet"></div>
                 </div>
 
-                <div class=" call__btn">
-                    <a class="btn call__btn-link" href="#">Заказать звонок</a>
-                </div>
+
+                <button class="call__btn call-me btn">Заказать звонок</button>
+
             </div>
         </div>
 
@@ -1131,7 +1133,7 @@
 
     </main>
 
-    <div class="footer">
+    <footer class="footer">
         <div class="container footer__container">
             <div class="footer__wrap">
                 <div class="footer__logo-clmn">
@@ -1340,9 +1342,35 @@
                 </div>
             </div>
         </div>
+    </footer>
+
+    <div class="callour personal-modal">
+        <!-- <div class="personal-modal__container"> -->
+        <div class="callour__wrap personal-modal__wrap ">
+            <div class="callour__top personal-modal__top">
+                <h2 class="callour__title personal-modal__title">Заказать звонок</h2>
+                <button class="personal-modal__cross"></button>
+            </div>
+
+            <form class="callour__form personal-modal__form" method="get" action="#">
+                <label class="callour__label personal-modal__label">
+                    Имя*
+                    <input class="callour__input personal-modal__input" type="text" name="name" required>
+                </label>
+                <label class="callour__label personal-modal__label">
+                    Телефон*
+                    <input class="callour__input personal-modal__input" type="tel" name="phone" required>
+                </label>
+                <label class="callour__label--email personal-modal__label">
+                    <span class="collour__input--email">E-mail</span>
+                    <input class="callour__input--email personal-modal" type="email" name="E-mail" required>
+                </label>
+
+                <input class="btn personal-modal__submit callour__submit" type="submit" value="Отправить">
+            </form>
+        </div>
+        <!-- </div> -->
     </div>
-
-
     <script src="js/main.js"></script>
 </body>
 
