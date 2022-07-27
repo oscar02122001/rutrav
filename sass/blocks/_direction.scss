@@ -1,0 +1,36 @@
+.direction {
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+.direction__list {
+    @include reset-list;
+    display: flex;
+}
+
+.direction__itom {
+    margin-right: 30px;
+    position: relative;
+
+    &:nth-of-type(1)::before {
+        position: absolute;
+        width: 24px;
+        height: 12px;
+        background-image: url("../img/direction.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        right: -36px;
+        top: 50%;
+        transform: translateY(-50%);
+        content: '';
+    }
+}
+
+.direction__link {
+    color: #2BA84A;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}

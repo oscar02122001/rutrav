@@ -626,9 +626,6 @@ template {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .header__top-itom {
@@ -2246,7 +2243,7 @@ template {
 
 .goods {
   padding-top: 92px;
-  margin-bottom: 155px;
+  padding-bottom: 155px;
   background-color: #F8F8F8;
 }
 
@@ -3861,5 +3858,131 @@ template {
 
 .sign-in__link:hover {
   text-decoration: none;
+}
+
+.direction {
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+
+.direction__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.direction__itom {
+  margin-right: 30px;
+  position: relative;
+}
+
+.direction__itom:nth-of-type(1)::before {
+  position: absolute;
+  width: 24px;
+  height: 12px;
+  background-image: url("../img/direction.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: -36px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: '';
+}
+
+.direction__link {
+  color: #2BA84A;
+  text-decoration: underline;
+}
+
+.direction__link:hover {
+  text-decoration: none;
+}
+
+.about-company {
+  padding-bottom: 96px;
+}
+
+.about-company__title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 53px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #2BA84A;
+}
+
+.about-company__title--main {
+  font-size: 48px;
+  line-height: 71px;
+}
+
+.about-company__disc {
+  margin-bottom: 12px;
+}
+
+.about-company__disc--bold {
+  margin-bottom: 7px;
+}
+
+.about-company__list {
+  margin-left: 40px;
+}
+
+.about-company__list-inner {
+  margin-left: 16px;
+}
+
+.about-company__itom {
+  margin-bottom: 8px;
+}
+
+.about-company__itom:last-child {
+  margin-bottom: 12px;
+}
+
+.about-company__itom::marker {
+  width: 10px;
+  height: 10px;
+  color: #2BA84A;
+}
+
+.about-company__itom-inner::marker {
+  width: 10px;
+  height: 10px;
+  color: #2BA84A;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-company__title--main {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .about-company__title {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .about-company__disc {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 6px;
+  }
+  .about-company__itom {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 6px;
+  }
+  .about-company__list {
+    margin-left: 20px;
+  }
+  .about-company__list-inner {
+    margin-left: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

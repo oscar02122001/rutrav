@@ -1,0 +1,87 @@
+.about-company {
+    padding-bottom: 96px;
+}
+
+.about-company__title {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: $titlecolor;
+}
+
+.about-company__title--main {
+    font-size: 48px;
+    line-height: 71px;
+}
+
+.about-company__disc {
+    margin-bottom: 12px;
+}
+
+.about-company__disc--bold {
+    margin-bottom: 7px;
+}
+
+.about-company__list {
+    margin-left: 40px;
+}
+
+.about-company__list-inner {
+    margin-left: 16px;
+}
+
+.about-company__itom {
+    margin-bottom: 8px;
+
+    &:last-child {
+        margin-bottom: 12px;
+    }
+}
+
+.about-company__itom::marker {
+    // display: inline-block;
+    width: 10px;
+    height: 10px;
+    color: $titlecolor;
+}
+
+.about-company__itom-inner::marker {
+    width: 10px;
+    height: 10px;
+    color: $titlecolor;
+}
+
+@media only screen and (max-width:768px) {
+    .about-company__title--main {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .about-company__title {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .about-company__disc {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 6px;
+    }
+
+    .about-company__itom {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 6px;
+    }
+    .about-company__list{
+        margin-left: 20px;
+    }
+    .about-company__list-inner{
+        margin-left: 10px;
+    }
+}
