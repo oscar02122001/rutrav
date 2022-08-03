@@ -1,0 +1,136 @@
+.status {
+    padding-top: 77px;
+    padding-bottom: 100px;
+    background-color: #fff;
+
+}
+
+.status__container {
+    display: flex;
+    // width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status__form {
+    width: 612px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.status__label {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.status__input {
+    padding: 10px 15px;
+    border: 1px solid #7D7D7D;
+    margin-top: 13px;
+    margin-bottom: 20px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.status__title {
+    margin-bottom: 21px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+    color: #2BA84A;
+}
+
+.status__checkbox {
+    // display: flex;
+    // flex-direction: row;
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.status__check-maker {
+    display: inline-block;
+    margin-right: 10px;
+    width: 26px;
+    height: 26px;
+
+    border: 1px solid #7D7D7D;
+    position: relative;
+
+    &::before {
+        display: none;
+        position: absolute;
+        width: 20px;
+        height: 15px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url("../img/checkbox.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        content: '';
+    }
+}
+
+.status__input--checkbox {
+    display: none;
+}
+
+.status__input:checked+.status__check-maker::before {
+    display: block;
+}
+
+.status__submit {
+    width: fit-content;
+    padding: 14px 105px;
+    border: none;
+    cursor: pointer;
+}
+
+.status__warn {
+    position: absolute;
+    color: #ff0000;
+    bottom: 0;
+}
+
+@media only screen and (max-width:950px) {
+    .status__img {
+        display: none;
+    }
+
+    .status__form {
+        max-width: 750px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .status__form {
+        width: 100%;
+    }
+
+    .status__title {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .status__check-maker {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .status__submit {
+        width: 100%;
+        padding: 14px 30px;
+    }
+}

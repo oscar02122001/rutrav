@@ -51,16 +51,16 @@ burgerr.addEventListener("click", function () {
 
 
 
-const ctbtn = document.querySelector(".header__end-ctbtn");
-const ctitom = document.querySelector(".header__ctitom-wrap");
+const ctbtn = document.querySelectorAll(".header__end-ctbtn");
+const ctitom = document.querySelectorAll(".header__ctitom-wrap");
 
 
-ctbtn.addEventListener("click", function () {
-    ctbtn.classList.toggle("active");
-    ctitom.classList.toggle("active");
-
-
-})
+for (let i = 0; i < ctbtn.length && ctitom.length; i++) {
+    ctbtn[i].addEventListener('click', function () {
+        ctbtn[i].classList.toggle("active")
+        ctitom[i].classList.toggle("active")
+    })
+}
 
 
 
@@ -181,3 +181,39 @@ signcross.addEventListener("click", function () {
     signin.classList.remove("sign-in__opened");
     body.classList.remove("freez")
 })
+
+const goodsSelector = document.querySelector(".goods__selector")
+const goodsSelectorList = document.querySelector(".goods__selector-list")
+const goodsDawn = document.querySelector(".goods__dawn")
+
+
+goodsSelector.addEventListener("click", function () {
+    goodsSelectorList.classList.toggle('active')
+    goodsDawn.classList.toggle('active')
+
+})
+
+const statusSubmit = document.querySelector(".status__submit")
+const statusInput = document.querySelectorAll(".status__input")
+const statusWarn = document.querySelectorAll(".status__warn")
+const statusEmail = document.querySelector(".status__input--email")
+const statusEmailWorn = document.querySelector(".status__worn--email")
+const statusTel = document.querySelector(".status__tel")
+
+// let statusTel = Number
+
+
+for (let i = 0; i < statusInput.length && statusWarn.length; i++) {
+    statusSubmit.addEventListener("click", function () {
+
+        if (statusInput[i].value === "") {
+            statusWarn[i].textContent = "Поле обязательно для заполнения"
+            return false
+        } else {
+            statusWarn[i].textContent = ""
+            return true
+        }
+    })
+
+
+}
