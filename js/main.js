@@ -202,7 +202,6 @@ const statusTel = document.querySelector(".status__tel")
 
 // let statusTel = Number
 
-
 for (let i = 0; i < statusInput.length && statusWarn.length; i++) {
     statusSubmit.addEventListener("click", function () {
 

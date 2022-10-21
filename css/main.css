@@ -4633,6 +4633,10 @@ template {
   bottom: 0;
 }
 
+textarea {
+  resize: none;
+}
+
 @media only screen and (max-width: 950px) {
   .status__img {
     display: none;
