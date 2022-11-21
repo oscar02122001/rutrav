@@ -186,12 +186,12 @@ const goodsSelector = document.querySelector(".goods__selector")
 const goodsSelectorList = document.querySelector(".goods__selector-list")
 const goodsDawn = document.querySelector(".goods__dawn")
 
+if (goodsSelector)
+    goodsSelector.addEventListener("click", function () {
+        goodsSelectorList.classList.toggle('active')
+        goodsDawn.classList.toggle('active')
 
-goodsSelector.addEventListener("click", function () {
-    goodsSelectorList.classList.toggle('active')
-    goodsDawn.classList.toggle('active')
-
-})
+    })
 
 const statusSubmit = document.querySelector(".status__submit")
 const statusInput = document.querySelectorAll(".status__input")
@@ -216,3 +216,170 @@ for (let i = 0; i < statusInput.length && statusWarn.length; i++) {
 
 
 }
+
+const waightBtn = document.querySelector('.cards__wght-spn')
+const cardsList = document.querySelector('.cards__list')
+// const bodyW = document.querySelector('body')
+const overly = document.querySelector('.overly')
+const cardsItom = document.querySelectorAll('.cards__itom')
+const cardsSpn = document.querySelector('.cards__wght-spn')
+const cardsWght = document.querySelector('.cards__wght')
+
+const openWght = function () {
+    cardsList.classList.remove('hidden')
+    overly.classList.remove('hidden')
+    cardsWght.classList.add('active')
+
+
+}
+
+const closeWght = function () {
+    cardsList.classList.add('hidden')
+    overly.classList.add('hidden')
+    cardsWght.classList.remove('active')
+}
+if (waightBtn)
+    waightBtn.addEventListener('click', openWght)
+
+if (overly)
+    overly.addEventListener('click', closeWght)
+
+document.addEventListener('keydown', function (evt) {
+    if (evt.key === 'Escape' && !waightBtn.classList.contains('hidden')) {
+        closeWght()
+    }
+})
+
+cardsItom.forEach(function (num, i) {
+    num.addEventListener('click', function () {
+        cardsSpn.textContent = ' '
+        cardsSpn.textContent = num.textContent
+        closeWght()
+    })
+})
+
+//// SECTION APPEAR DOWN TO UP
+
+const sectionAll = document.querySelectorAll('.section')
+const container = document.querySelectorAll('.container')
+const sectionLink = document.querySelectorAll('.sections__link')
+const goodsItomLink = document.querySelectorAll('.goods__itom-link')
+
+const sectionShow = function (entries, observer) {
+    const [entry] = entries
+    if (entry.isIntersecting) {
+        entry.target.classList.remove('section-hidden')
+        observer.unobserve(entry.target)
+    };
+
+}
+
+const sectionObs = new IntersectionObserver(sectionShow, {
+    root: null,
+    threshold: 0.1,
+})
+
+sectionAll.forEach(section => {
+    sectionObs.observe(section)
+    section.classList.add('section-hidden')
+})
+
+///// HOME CUSTOMER
+// const sliderMain = function () {
+
+const slides = document.querySelectorAll('.customer__slider')
+const slider = document.querySelector('.slider')
+const btnNext = document.querySelectorAll('.top-slider__next')
+const btnPrev = document.querySelectorAll('.top-slider__prev')
+
+let curSlide = 0
+const maxSizeSlides = slides.length
+
+const goToSlide = function (slide) {
+    slides.forEach((s, i) => s.style.transform = `translateX(${100 * (i - slide)}%)`)
+}
+
+goToSlide(0)
+
+const nextSlide = function () {
+    if (curSlide === maxSizeSlides - 1) {
+        curSlide = 0
+    } else {
+        curSlide++
+    }
+    goToSlide(curSlide)
+}
+
+const prevSlide = function () {
+    if (curSlide === 0) {
+        curSlide = maxSizeSlides - 1
+    } else {
+        curSlide--
+    }
+    goToSlide(curSlide)
+}
+btnNext.forEach(btn => btn.addEventListener('click', nextSlide))
+btnPrev.forEach(btn => btn.addEventListener('click', prevSlide))
+// }
+// sliderMain()
+
+////////////HOME GOODS
+
+const slidesGoods = document.querySelectorAll('.goods__itom--home')
+const sliderGoods = document.querySelector('.goods__list--home')
+const containerDots = document.querySelector('.goods__bottom-slider')
+
+
+if (sliderGoods);
+let curSlideGoods = 0
+const slideMaxGoods = slidesGoods.length
+
+const createDots = function () {
+    slidesGoods.forEach((_, i) => {
+        containerDots.insertAdjacentHTML('beforeend', `<div class="bottom-slider__circle" data-slide = ${i}></div>`)
+    })
+}
+createDots()
+
+containerDots.addEventListener('click', function (e) {
+    if (e.target.classList.contains('bottom-slider__circle')) {
+        const slide = e.target.dataset.slide;
+        goToNextGoods(slide)
+        activeDot(slide)
+    }
+})
+
+const activeDot = function (slide) {
+    document.querySelectorAll('.bottom-slider__circle').forEach(dot => dot.classList.remove('active'))
+    document.querySelector(`.bottom-slider__circle[data-slide='${slide}']`).classList.add('active')
+}
+
+const goToNextGoods = function (slide) {
+    slidesGoods.forEach((s, i) => s.style.transform = `translateX(${100 * (i-slide)}%)`)
+    activeDot(slide)
+}
+// slidesGoods.forEach((s, i) => {
+//     s.style.transform = `translateX(${100 * i}%)`
+// })
+goToNextGoods(0)
+
+const nextSlideGoods = function () {
+    if (curSlideGoods === slideMaxGoods - 1) {
+        curSlideGoods = 0
+    } else {
+        curSlideGoods++
+    }
+    goToNextGoods(curSlideGoods)
+}
+
+const prevSlideGoods = function () {
+    if (curSlideGoods === 0) {
+        curSlideGoods = slideMaxGoods - 1
+    } else {
+        curSlideGoods--
+    }
+    goToNextGoods(curSlideGoods)
+}
+
+btnNext.forEach(btn => btn.addEventListener('click', nextSlideGoods))
+btnPrev.forEach(btn => btn.addEventListener('click', prevSlideGoods))

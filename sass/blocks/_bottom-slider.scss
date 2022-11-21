@@ -1,21 +1,21 @@
-.bottom-slider  {
+.bottom-slider {
     display: flex;
     justify-content: center;
+    // position: relative;
 }
 
 
 .bottom-slider__circle {
+    // position: absolute;
     width: 20px;
     height: 20px;
     margin-right: 20px;
     background-color: #E4DFC2;
+    // background-color: red;
     border-radius: 50%;
+    z-index: 100;
+}
 
-    &:nth-of-type(4) {
-        margin-right: 0;
-    }
-
-    &:active {
-        background-color: $titlecolor;
-    }
+.active {
+    background-color: $titlecolor;
 }

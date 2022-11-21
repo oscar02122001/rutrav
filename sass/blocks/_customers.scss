@@ -1,21 +1,36 @@
 .customers {
     padding-top: 100px;
     padding-bottom: 100px;
-   
+
 }
 
 .customers__sliders {
-    display: flex;
-    align-items: center;
+    width: 100%;
+    padding: 0 6px;
+    height: 181px;
+    margin: 20px 0;
+    position: relative;
+
+    /* IN THE END */
     overflow: hidden;
 }
 
-.customer__slider--zoo {
-    margin-right: 30px;
+.customer__slider {
+    position: absolute;
+    top: 0;
+    width: calc((100% - 0px) /4);
+    height: 181px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* THIS creates the animation! */
+    transition: transform 1s;
 }
 
+
 .customer__logo {
-    width: 100%;
     display: block;
 }
 
@@ -48,7 +63,7 @@
         display: flex;
         flex-wrap: nowrap;
         flex-shrink: 0;
-        width: calc((100% - 40px) /3);
+        width: calc((100% - 40px) /2);
         margin-right: 20px;
     }
 }
@@ -66,7 +81,7 @@
 
     .customers__top-slider {
         position: absolute;
-        bottom: -30px;
+        bottom: -50px;
         left: 50%;
         transform: translateX(-50%);
 
@@ -85,11 +100,11 @@
     }
 
     .customer__slider {
-        width: calc((100% - 20px) /2);
+        width: calc((100% - 20px) /1);
     }
 }
 
-@media only screen and (max-width:620px){
+@media only screen and (max-width:620px) {
     .customer__slider {
         width: calc((100% - 10px) /1);
         padding: 0 20px 0 30px;

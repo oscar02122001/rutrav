@@ -1,0 +1,237 @@
+.cards {
+    background-color: #F8F8F8;
+    position: relative;
+}
+
+.cards__container {
+    display: flex;
+    // justify-content: space-between;
+    margin-top: 40px;
+    background-color: #F8F8F8;
+}
+
+.cards__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards__text,
+.cards__left-col,
+.cards__right-col {
+    padding: 0 15px;
+}
+
+.cards__title {
+    margin-bottom: 48px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+    color: $titlecolor
+}
+
+.cards__img-wrap {
+    margin-right: 30px;
+    padding-top: 45px;
+    padding-left: 95px;
+    padding-right: 80px;
+    padding-bottom: 44px;
+    background-color: #fff;
+    border-radius: 50px 0;
+}
+
+.cards__price {
+    position: relative;
+    margin-bottom: 68px;
+    color: #333;
+
+}
+
+.cards__ex {
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+}
+
+.cards__num {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 32px;
+    text-align: center;
+    color: $linkcolor;
+}
+
+.cards__pay-type {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 17px;
+    // font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    color: #333;
+
+    &::before {
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 20px;
+        left: 0;
+        bottom: 0;
+        background-image: url('../img/typeMon.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: '';
+    }
+}
+
+.cards__lab {
+    font-size: 24px;
+    line-height: 26px;
+    color: #333;
+}
+
+.cards__wght {
+    position: relative;
+    margin-bottom: 35px;
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    color: #333;
+
+}
+
+
+
+
+.cards__wght-spn {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    border-bottom: 2px solid #2D3A3A;
+
+    &::after {
+        position: absolute;
+        width: 12px;
+        height: 8px;
+        background-image: url('../img/down.svg');
+        bottom: 50%;
+        transform: translateY(100%);
+        right: 0;
+        content: '';
+
+    }
+}
+
+.cards__list {
+    // display: none;
+    // opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    @include reset-list;
+    padding: 10px 30px;
+    text-align: center;
+    background-color: #2D3A3A;
+    color: #fff;
+    z-index: 5;
+}
+
+.cards__itom {
+    margin-bottom: 9px;
+    font-size: 18px;
+
+    &:hover {
+        cursor: pointer;
+        color: #FF5F01;
+    }
+}
+
+
+.cards__use {
+    padding: 17px;
+    background-color: #fff;
+    border: 2px solid;
+    border-color: #FF5F01;
+    border-radius: 20px 0;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+.cards__wght.active .cards__wght-spn::after {
+    transform: translateY(50%) rotate(180deg);
+}
+
+.overly {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 9, 9, 0.0);
+}
+
+.cards__mark {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    line-height: 26px;
+    position: relative;
+}
+
+.cards__numm {
+    // margin-left: 210px;
+    padding: 0px 10px;
+    max-width: 100px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+
+    &:focus {
+        // border: none;
+        outline: none;
+    }
+
+}
+
+.cards__num-block {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #9ba6a6;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.cards__plus,
+.cards__min {
+    padding: 0 25px;
+    display: block;
+    cursor: pointer;
+}
+
+.cards__amount-wght {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.cards__amoun-num {
+    text-align: center;
+    width: 230px;
+    border-bottom: 3px solid #9ba6a6;
+}
